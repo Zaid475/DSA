@@ -325,3 +325,47 @@ function pattern(){
     }
 }
 pattern()
+
+
+
+
+function generatePattern(n) {
+    if (n < 1 || !Number.isInteger(n)) {
+        return "Please enter a positive integer.";
+    }
+
+    let pattern = "";
+    let count = 0;
+
+    // First segment: First 5 numbers
+    for (let i = 1; i <= 5 && count < n; i++) {
+        pattern += i;
+        count++;
+    }
+
+    // Second segment: 5 stars
+    for (let i = 1; i <= 5 && count < n; i++) {
+        pattern += "*";
+        count++;
+    }
+
+    // Third segment: Next 5 numbers
+    for (let i = 11; i <= 15 && count < n; i++) {
+        pattern += i;
+        count++;
+    }
+
+    // Fourth segment: Remaining stars
+    for (let i = 0; count < n; i++) {
+        pattern += "*";
+        count++;
+    }
+    
+    
+
+    return pattern;
+}
+
+// Example usage
+const n = 18; // Change this value to test other inputs
+console.log(generatePattern(n));
