@@ -190,3 +190,343 @@
 // a=50-29
 
 
+
+
+// function findLargestThree(arr) {
+//     if (arr.length < 3) {
+//       return "Array must have at least 3 elements";
+//     }
+  
+//     let first = -Infinity;
+//     let second = -Infinity;
+//     let third = -Infinity;
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] > first) {
+//         third = second;
+//         second = first;
+//         first = arr[i];
+//       } else if (arr[i] > second  && arr[i]!==first) {
+//         third = second;
+//         second = arr[i];
+//       } else if (arr[i] > third) {
+//         third = arr[i];
+//       }
+//     }
+  
+//     return { largest: first, secondLargest: second, thirdLargest: third };
+//   }
+  
+//   // Example usage:
+//   let numbers = [10,70,40,120,30];
+//   let result = findLargestThree(numbers);
+//   console.log(result);
+  
+
+
+// var arr=[10,70,40,120,30]
+
+
+// function xyz(arr){
+//     var largest=-Infinity;
+//     var secondlargest=-Infinity;
+//     var thirdlargest=-Infinity;
+    
+//     for(var i=0;i<arr.length;i++){
+//         if(arr[i]>largest){
+//             thirdlargest=secondlargest;
+//             secondlargest=largest;
+//             largest=arr[i]
+//         }
+//         else if(arr[i]>secondlargest && arr[i]!==largest){
+//             thirdlargest=secondlargest;
+//             secondlargest=arr[i];
+            
+            
+//         }
+//         if(arr[i]> thirdlargest && arr[i]!==secondlargest && arr[i]!== largest){
+//             thirdlargest=arr[i]
+            
+//         }
+//     }
+    
+//     console.log(arr)
+//     console.log(largest,secondlargest,thirdlargest)
+    
+    
+// }
+
+
+// xyz(arr)
+
+
+// palindrome
+
+// var word="madamsa"
+
+// function palindrome(word){
+//     for(var i=0;i<=Math.floor(word.length/2);i++){
+//         if(word[i] !== word[word.length-i-1]){
+//             return "Not a palindrome"
+//         }
+//     }
+//     return "palindrome"
+    
+// }
+
+// console.log(palindrome(word))
+
+
+// function alphabetpattern(){
+//     var str=""
+//     var count=65
+    
+    
+//     for(var i=1;i<=5;i++){
+//         for(var j=1;j<=5;j++){
+//             str=str+String.fromCharCode(count)+" "
+//             count ++;
+//         }
+        
+
+//         str=str + "\n"
+        
+        
+//     }
+//     console.log(str)
+    
+    
+    
+// }
+
+// alphabetpattern()
+
+
+
+
+
+// function alphabetpattern(){
+//     var str=""
+//     var count=65
+    
+    
+//     for(var i=1;i<=5;i++){
+//         for(var j=1;j<=5;j++){
+//             str=str+String.fromCharCode(count)+" "
+//             count ++;
+//         }
+//         count=65;
+        
+
+//         str=str + "\n"
+        
+        
+//     }
+//     console.log(str)
+    
+    
+    
+// }
+
+// alphabetpattern()
+
+
+
+// function alphabetpattern(){
+//     var str=""
+//     var count=65
+    
+    
+//     for(var i=1;i<=5;i++){
+//         for(var j=1;j<=i;j++){
+//             str=str+String.fromCharCode(count)+" "
+//             count ++;
+//         }
+        
+
+//         str=str + "\n"
+        
+        
+//     }
+//     console.log(str)
+    
+    
+    
+// }
+
+// alphabetpattern()
+
+
+
+// function numbers(){
+//     str=""
+//     var count=1
+//     for(var i=5; i>=1;i--){
+//         for(var j=1;j<=i;j++){
+//             str=str + count + "";
+
+
+
+//         }
+//         count++;
+//         str=str +"\n"
+//     }
+
+//     console.log(str)
+// }
+
+// numbers();
+
+
+// function numbers(){
+//     str=""
+//     var count=1
+//     for(var i=5; i>=1;i--){
+//         for(var j=1;j<=i;j++){
+//             str=str + count + "";
+//             count++
+
+
+
+//         }
+        
+//         str=str +"\n"
+//     }
+
+//     console.log(str)
+// }
+
+// numbers();
+
+
+
+
+// function numbers(){
+//     str=""
+//     var count=5
+//     for(var i=5; i>=1;i--){
+//         for(var j=1;j<=i;j++){
+//             str=str + count + "";
+//             count--
+
+
+
+//         }
+//         count=5;
+        
+//         str=str +"\n"
+//     }
+
+//     console.log(str)
+// }
+
+// numbers();
+
+
+
+
+// let n = 5; 
+// for (let i = 1; i <= n; i++) { 
+// 	let str = "* "; 
+// 	let space = ' '; 
+// 	console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+// }
+
+
+// let n = 5; 
+// for (let i = n; i >= 1; i--) { 
+// 	let str = "* "; 
+// 	let space = ' '; 
+// 	console.log(space.repeat((n - i)) + str.repeat(i*2-1)); 
+// }
+
+
+// swapping with using 3 variable
+
+
+// var a=10;
+// var b =20
+// var temp;
+
+// temp=a;
+// a=b;
+
+// b=temp
+
+// console.log(a,b)
+// 1
+// *
+// 12
+// **
+
+// function pattern(){
+    
+//     for(var i=1;i<=5;i++){
+//         str=""
+//         for(var j=1;j<=i;j++){
+//             str=str + j
+
+
+
+//         }
+//         console.log(j)
+//         console.log("*".repeat(j))
+
+
+
+
+//     }
+// }
+// pattern()
+
+
+
+
+// function pattern(){
+//     str="*"
+//     var i=1;
+//     while(i<=5){
+//         console.log(str.repeat(i))
+//         i++
+//     }
+// }
+// pattern()
+
+
+// function pattern() {
+//     let result = "";
+
+//     // Append numbers 1 to 5
+//     for (let i = 1; i <= 5; i++) {
+//         result += i + ",";
+//     }
+
+//     // Append stars (5 times)
+//     result += ", "; // Comma and space before stars
+//     for (let j = 1; j <= 5; j++) {
+//         result += "* ";
+//     }
+
+//     // Append numbers 11 to 15
+//     for (let k = 11; k <= 15; k++) {
+//         result += k + ",";
+//     }
+
+//     // Append stars (4 times)
+//     for (let l = 1; l <= 4; l++) {
+//         result += "* ";
+//     }
+
+//     // Print the final result
+//     console.log(result.trim());
+// }
+
+// pattern();
+
+
+let a={};
+let b={key:"b"}
+let c={key:"c"}
+a[b]=123
+a[c]=456
+console.log(a[b])
